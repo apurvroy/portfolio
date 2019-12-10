@@ -27,7 +27,7 @@ app.post('/resume',function(req,res){
 app.get('/',function(req,res){
 return res.render('resume');
 });
-app.listen(port,function(err){
+app.listen((process.env.PORT ||8000),function(err){
    if(err)
    console.log(err);
    console.log("the server is running on the port: ",port)
