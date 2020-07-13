@@ -433,7 +433,7 @@ mark{
    left: -16%;
 }
 }
-#education .timeline-box:nth-child(2n+1) .top::before{
+#education .timeline-box:nth-child(1) .top::before{
 	content: "  ";
 	background-image:url(/images/college-logo.png);
 	background-repeat:no-repeat;
@@ -444,7 +444,18 @@ mark{
 	width:25%;
 	background-size:contain;
 }
-#education .timeline-box:nth-child(2n) .top::before{
+#education .timeline-box:nth-child(2) .top::before{
+	content: "  ";
+	background-image:url(/images/school.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:25%;
+	width:25%;
+	background-size:contain;
+}
+#education .timeline-box:nth-child(3) .top::before{
 	content: "  ";
 	background-image:url(/images/school.jpg);
 	background-repeat:no-repeat;

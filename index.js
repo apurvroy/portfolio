@@ -18,7 +18,7 @@ app.post('/resume',function(req,res){
   },function(err,newMessage){
     if(err){
       console.log('error in creating a Message');
-      return ;
+      return res.redirect('back');
     }
     console.log('******',newMessage);
     return res.redirect('back');
